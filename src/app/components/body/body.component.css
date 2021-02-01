@@ -1,0 +1,103 @@
+*{
+  background: #24282F;
+  box-sizing: border-box;
+  max-width: 1400px;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 50px;
+  padding: 20px;
+  width: 100%;
+  background: #3C3E44;
+}
+.card{
+  border: 1px solid rgba(0, 0, 0, 0.514);
+  border-radius: 20px;
+  display: flex;
+  margin: 0px;
+  gap: 15px;
+  height: 250px;
+
+}
+.imagen{
+  display: block;
+  width: 210px;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.card-texto-principal{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  position: relative;
+}
+
+.card-nombre{
+  position: relative;
+}
+
+.card-nombre h1{
+  margin-bottom: 15px;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 30px;
+}
+.card-nombre span{
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 10px;
+
+}
+/*Condition*/
+  .condition-true{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: green;
+    position: absolute;
+    top: 84px;
+    left: -15px;
+  }
+
+  .condition-false{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background: red;
+    position: absolute;
+    top: 83px;
+    left: -15px;
+  }
+/*fin condition*/
+
+.card-origin strong{
+  color: rgb(224, 224, 39);
+  font-weight: bold;
+}
+.card-origin span{
+  color: white;
+  font-weight: bold;
+}
+
+.genero span{
+  font-weight: bold;
+  color: rgb(224, 224, 39);;
+}
+.genero strong{
+  color: white;
+  margin-left: 5px;
+}
+
+.type{
+  position: absolute;
+  top: 185px;
+}
+
+

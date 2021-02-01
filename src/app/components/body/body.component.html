@@ -1,0 +1,23 @@
+<div class="cards">
+  <div class="card" *ngFor="let lista of data">
+      <img src="{{lista.image}}" class="imagen">
+    <div class="card-texto-principal">
+      <div class="card-nombre">
+        <span class="condition-true" *ngIf="lista.status == 'Alive'"></span>
+        <span class="condition-false" *ngIf="lista.status == 'Dead'"></span>
+        <h1>{{lista.name}}</h1>
+        <span>{{lista.status}} - {{lista.species}}</span>
+      </div>
+      <div class="card-origin">
+        <span> <strong>Tierra:</strong> {{lista.origin.name}}</span>
+      </div>
+      <div class="genero">
+        <span>Genero: <strong>{{lista.gender}}</strong></span>
+
+      </div>
+      <div class="type">
+        <span> <strong *ngIf="lista.type.length > 0">Type: </strong> {{lista.type}}</span>
+      </div>
+    </div>
+  </div>
+</div>
